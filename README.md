@@ -77,6 +77,25 @@ Examples:
 - [ ] SWR
 - [ ] URL State (`nuqs`)
 
+#### Redux Toolkit — 12-stage path
+
+Progress toward the [ProjectFlow](docs/ai-rules/plans/redux/business-model-target.md) capstone:
+
+- [x] [01 Store Setup](learning/redux/01-store-setup/) — `configureStore`, typed hooks, route-scoped Provider
+- [ ] 02 UI Slices — sidebar, modals, selectors
+- [ ] 03 Auth Slice — Supabase session sync
+- [ ] 04 Async Thunks — loading and error states
+- [ ] 05 Entity Adapter — normalized state
+- [ ] 06 RTK Query Basics — queries and Supabase
+- [ ] 07 RTK Query CRUD — mutations and invalidation
+- [ ] 08 Optimistic Updates — cache patches and rollback
+- [ ] 09 Cross-Slice Communication — listener middleware
+- [ ] 10 Performance & Scaling — memoized selectors, reducer splitting
+- [ ] 11 Supabase Realtime — live cache updates
+- [ ] 12 Production Patterns — error middleware, safe hydration
+
+**Next up:** Stage 2 — UI Slices
+
 ---
 
 ### Showcase
@@ -108,12 +127,16 @@ Comparable task-board implementations:
 ```bash
 learning/
   redux/
+    01-store-setup/
+    02-ui-slices/
+    …
   zustand/
   tanstack-query/
   swr/
   nuqs/
 
 showcase/
+  projectflow/          # Redux capstone
   redux-task-board/
   zustand-task-board/
   tanstack-task-board/

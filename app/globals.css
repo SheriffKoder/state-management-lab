@@ -96,7 +96,7 @@
 
   .gradient-border-l::before {
     @apply gradient-accent;
-    background: linear-gradient(to left, #7AA1D2, #DBD4B4, #CC95C0);
+    background: linear-gradient(to bottom, #7AA1D2, #DBD4B4, #CC95C0);
   }
 
   .gradient-text {

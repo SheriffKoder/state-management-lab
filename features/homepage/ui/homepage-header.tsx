@@ -33,7 +33,7 @@ export function HomepageHeader({
   return (
     <header
       className={cn(
-        "border-b border-foreground/10 px-6 py-8 w-full sticky top-0 bg-background z-10",
+        "border-b border-foreground/10 px-6 pt-4 pb-8 w-full sticky top-0 z-10 dark:brightness-100 brightness-[1.1] contrast-[0.5] dark:contrast-100",
         className,
       )}
     >
