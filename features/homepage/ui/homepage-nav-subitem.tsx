@@ -31,7 +31,7 @@ export function HomepageNavSubItemRow({
         aria-hidden
         className={cn(
           "w-3 shrink-0 text-xs",
-          subitem.completed ? "text-foreground" : "text-foreground/40",
+          subitem.completed ? "text-emerald-500" : "text-foreground/40",
         )}
       >
         {subitem.completed ? "✓" : "○"}
@@ -39,7 +39,7 @@ export function HomepageNavSubItemRow({
       <span
         className={cn(
           "truncate text-xs",
-          subitem.completed ? "text-foreground/80" : "text-foreground/60",
+          subitem.completed ? "text-emerald-500" : "text-foreground/60",
         )}
       >
         {subitem.label}

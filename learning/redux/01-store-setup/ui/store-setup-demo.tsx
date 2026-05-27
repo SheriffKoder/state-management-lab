@@ -21,29 +21,32 @@ export function StoreSetupDemo() {
   const { ready, count } = useAppSelector((state) => state._placeholder);
 
   return (
-    <div className="flex flex-col gap-6 rounded-md border border-foreground/10 p-6">
-      <p className="text-xs uppercase tracking-wide text-foreground/50">
-        Stage 1 — store wiring only
-      </p>
+    <div className="flex h-full flex-col justify-center p-6">
+      <div className="mx-auto flex w-full max-w-sm flex-col gap-6">
+        <p className="text-xs uppercase tracking-wide text-foreground/50">
+          Stage 1 — store wiring only
+        </p>
 
-      <dl className="grid gap-3 text-sm">
-        <div className="flex items-center gap-4">
-          <dt className="text-foreground/60">Store ready</dt>
-          <dd className="font-medium">{ready ? "true" : "false"}</dd>
-        </div>
-        <div className="flex items-center gap-4">
-          <dt className="text-foreground/60">Demo count</dt>
-          <dd className="font-medium">{count}</dd>
-        </div>
-      </dl>
+        <dl className="grid gap-3 rounded-md border border-foreground/10 p-4 text-sm">
+          <div className="flex items-center justify-between gap-4">
+            <dt className="text-foreground/60">Store ready</dt>
+            <dd className="font-medium">{ready ? "true" : "false"}</dd>
+          </div>
+          <div className="flex items-center justify-between gap-4">
+            <dt className="text-foreground/60">Demo count</dt>
+            <dd className="font-medium">{count}</dd>
+          </div>
+        </dl>
 
-      <Button
-        type="button"
-        variant="outline"
-        onClick={() => dispatch(incrementDemoCount())}
-      >
-        Increment demo count
-      </Button>
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          onClick={() => dispatch(incrementDemoCount())}
+        >
+          Increment demo count
+        </Button>
+      </div>
     </div>
   );
 }

@@ -82,7 +82,7 @@ Examples:
 Progress toward the [ProjectFlow](docs/ai-rules/plans/redux/business-model-target.md) capstone:
 
 - [x] [01 Store Setup](learning/redux/01-store-setup/) — `configureStore`, typed hooks, route-scoped Provider
-- [ ] 02 UI Slices — sidebar, modals, selectors
+- [x] [02 UI Slices](learning/redux/02-ui-slices/) — sidebar, modals, `createSlice`, selectors
 - [ ] 03 Auth Slice — Supabase session sync
 - [ ] 04 Async Thunks — loading and error states
 - [ ] 05 Entity Adapter — normalized state
@@ -94,7 +94,7 @@ Progress toward the [ProjectFlow](docs/ai-rules/plans/redux/business-model-targe
 - [ ] 11 Supabase Realtime — live cache updates
 - [ ] 12 Production Patterns — error middleware, safe hydration
 
-**Next up:** Stage 2 — UI Slices
+**Next up:** Stage 3 — Auth Slice
 
 ---
 

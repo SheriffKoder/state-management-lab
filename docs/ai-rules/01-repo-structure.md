@@ -28,10 +28,29 @@ Rules:
 Example:
 
 learning/redux/
-  01-basic-store/
-  02-actions-reducers/
-  03-selectors/
-  04-async-flows/
+  01-store-setup/
+  02-ui-slices/
+  03-auth-slice/
+  …
+
+---
+
+## Learning page layout
+
+Every `app/learning/<tool>/<iteration>/page.tsx` uses the same shell:
+
+1. **`main`** — `h-screen`, padded background
+2. **Outer card** — `mx-auto flex h-full flex-col gap-6 rounded-md border p-6` wraps title + demo
+3. **`header`** — `max-w-2xl` with stage title and one-line description
+4. **App window** — `h-full min-h-0 overflow-hidden rounded-lg border shadow-sm` contains the demo component at real proportions
+
+Demo UI lives inside the app window (`learning/.../ui/*-demo.tsx`):
+
+- Use realistic widths (`max-w-sm`, `max-w-md`) on inner cards — not full-bleed content
+- Overlays/modals use `absolute inset-0` within a `relative` demo root — not `fixed` to the viewport
+- Sidebars use `border-r` and full height of the app window
+
+`page.tsx` is a thin composer only — no Redux logic in the route file.
 
 ---
 

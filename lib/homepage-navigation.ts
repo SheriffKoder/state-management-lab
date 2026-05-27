@@ -98,7 +98,7 @@ export const homepageNavigationConfig: HomepageNavGroup[] = [
             id: "redux-02-ui-slices",
             label: "02 UI Slices",
             href: "/learning/redux/02-ui-slices",
-            completed: false,
+            completed: true,
           },
           {
             id: "redux-03-auth-slice",
