@@ -104,7 +104,7 @@ export const homepageNavigationConfig: HomepageNavGroup[] = [
             id: "redux-03-auth-slice",
             label: "03 Auth Slice",
             href: "/learning/redux/03-auth-slice",
-            completed: false,
+            completed: true,
           },
           {
             id: "redux-04-async-thunks",
