@@ -49,8 +49,8 @@ function DemoSetupInstructions() {
 
 export function DemoLoginForm() {
   const dispatch = useAppDispatch();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("demo@example.com");
+  const [password, setPassword] = useState("password");
   const [submitting, setSubmitting] = useState(false);
 
   if (!isSupabaseConfigured()) {

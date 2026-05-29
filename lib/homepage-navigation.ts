@@ -110,7 +110,7 @@ export const homepageNavigationConfig: HomepageNavGroup[] = [
             id: "redux-04-async-thunks",
             label: "04 Async Thunks",
             href: "/learning/redux/04-async-thunks",
-            completed: false,
+            completed: true,
           },
           {
             id: "redux-05-entity-adapter",

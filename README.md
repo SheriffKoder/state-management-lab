@@ -84,7 +84,7 @@ Progress toward the [ProjectFlow](docs/ai-rules/plans/redux/business-model-targe
 - [x] [01 Store Setup](learning/redux/01-store-setup/) — `configureStore`, typed hooks, route-scoped Provider
 - [x] [02 UI Slices](learning/redux/02-ui-slices/) — sidebar, modals, `createSlice`, selectors
 - [x] [03 Auth Slice](learning/redux/03-auth-slice/) — Supabase session sync, auth listener, login demo
-- [ ] 04 Async Thunks — loading and error states
+- [x] [04 Async Thunks](learning/redux/04-async-thunks/) — `createAsyncThunk`, `extraReducers`, Supabase fetch demo
 - [ ] 05 Entity Adapter — normalized state
 - [ ] 06 RTK Query Basics — queries and Supabase
 - [ ] 07 RTK Query CRUD — mutations and invalidation
@@ -94,7 +94,7 @@ Progress toward the [ProjectFlow](docs/ai-rules/plans/redux/business-model-targe
 - [ ] 11 Supabase Realtime — live cache updates
 - [ ] 12 Production Patterns — error middleware, safe hydration
 
-**Next up:** Stage 4 — Async Thunks
+**Next up:** Stage 5 — Entity Adapter
 
 ---
 
@@ -130,6 +130,7 @@ learning/
     01-store-setup/
     02-ui-slices/
     03-auth-slice/
+    04-async-thunks/
     …
   zustand/
   tanstack-query/
